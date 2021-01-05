@@ -1,7 +1,9 @@
 # AutoHyperstackReg
 
 ## Changelog
-* v1.1: A subregion can be used as a reference by tracing a rectangular selection before starting the macro.
+* v1.1:
+  * A subregion can be used as a reference by tracing a rectangular selection before starting the macro.
+  * Fixed an issue that caused z alignment to fail in hyperstacks with few slices
 
 ## Description
 AutoHyperstackReg is an ImageJ macro that uses the [TurboReg](http://bigwww.epfl.ch/thevenaz/turboreg/) and [MultiStackReg](http://bradbusse.net/downloads.html) ImageJ plugins to align in xy and z the successive frames of a stack or hyperstack. AutoHyperstackReg automatically performs the following steps used with the [MultiHyperStackReg](https://github.com/nicolasloyer/AutoHyperstackReg/) ImageJ macro: generation of a single slice reference stack; alignment of the reference stack; application of the alignment to the original hyperstack (see the related [JoVE protocol](https://www.jove.com/t/61954/applications-immobilization-drosophila-tissues-with-fibrin-clots-for) for details).
