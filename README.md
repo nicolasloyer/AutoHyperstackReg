@@ -6,11 +6,11 @@
   * Fixed multiple issues with z alignment
 
 ## Description
-AutoHyperstackReg is an ImageJ macro that uses the [TurboReg](http://bigwww.epfl.ch/thevenaz/turboreg/) and [MultiStackReg](http://bradbusse.net/downloads.html) ImageJ plugins to align in xy and z the successive frames of a stack or hyperstack. AutoHyperstackReg automatically performs the following steps used with the [MultiHyperStackReg](https://github.com/nicolasloyer/AutoHyperstackReg/) ImageJ macro: generation of a single slice reference stack; alignment of the reference stack; application of the alignment to the original hyperstack (see the related [JoVE protocol](https://www.jove.com/t/61954/applications-immobilization-drosophila-tissues-with-fibrin-clots-for) for details).
+AutoHyperstackReg is an ImageJ macro that uses the [TurboReg](http://bigwww.epfl.ch/thevenaz/turboreg/) and [MultiStackReg](http://bradbusse.net/downloads.html) ImageJ plugins to align in xy and z the successive frames of a stack or hyperstack. AutoHyperstackReg automatically performs the following steps described in [JoVE](https://www.jove.com/t/61954/applications-immobilization-drosophila-tissues-with-fibrin-clots-for) with the [MultiHyperStackReg](https://github.com/nicolasloyer/AutoHyperstackReg/) ImageJ macro: generation of a single slice reference stack; alignment of the reference stack; application of the alignment to the original hyperstack.
 
 ## Installation
 * Download [TurboReg](http://bigwww.epfl.ch/thevenaz/turboreg/) and [MultiStackReg](http://bradbusse.net/downloads.html) and put them in the ImageJ plugin folder.
-* Download AutoHyperstackReg, open it in ImageJ or a text editor, copy an paste the entire code in the Startup Macros of ImageJ (accessible in the macros folder of ImageJ or from the ImageJ window with Plugins>Macros>Startup Macros), save Startup Macros, reload ImageJ.
+* Download AutoHyperstackReg, open it in ImageJ or a text editor, copy and paste the entire code in the Startup Macros of ImageJ (accessible in the macros folder of ImageJ or from the ImageJ window with Plugins>Macros>Startup Macros), save Startup Macros, reload ImageJ.
 
 ## Use
 * To only use a subregion as a reference for the alignment, which can drastically speed up the registration and in my experience often makes the alignment better, trace a rectangular selection before starting AutoHyperstackReg. The entire stack will be aligned based on the reference.
