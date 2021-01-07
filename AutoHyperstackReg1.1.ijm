@@ -105,7 +105,9 @@
               Stack.setFrame(t);
               List.setMeasurements;
               centerOfMassX[t-1]=List.getValue("XM");
+              if (isNaN(centerOfMassX[t-1])) centerOfMassX[t-1]=centerOfMassX[t-2];
               centerOfMassY[t-1]=List.getValue("YM");
+              if (isNaN(centerOfMassY[t-1])) centerOfMassY[t-1]=centerOfMassY[t-2];
           }
           anchorFrameX=centerOfMassX[anchorFrame-1];
           anchorFrameY=centerOfMassY[anchorFrame-1];
@@ -176,6 +178,7 @@
               Stack.setFrame(t);
               List.setMeasurements;
               centerOfMassY2[t-1]=List.getValue("YM")/(voxelDepth/pixelHeight); //resize back the y coordinate because resized the reference
+              if (isNaN(centerOfMassY2[t-1])) centerOfMassY2[t-1]=centerOfMassY2[t-2];
           }
           anchorFrameY=centerOfMassY2[anchorFrame-1];
           for (t=1; t<=frames; t++) centerOfMassY2[t-1]=centerOfMassY2[t-1]-anchorFrameY;
@@ -232,6 +235,7 @@
               Stack.setFrame(t);
               List.setMeasurements;
               centerOfMassY[t-1]=List.getValue("YM")/(voxelDepth/pixelWidth); //resize back the y coordinate because resized the reference
+              if (isNaN(centerOfMassY[t-1])) centerOfMassY[t-1]=centerOfMassY[t-2];
           }
           anchorFrameY=centerOfMassY[anchorFrame-1];
           for (t=1; t<=frames; t++) centerOfMassY[t-1]=centerOfMassY[t-1]-anchorFrameY;
