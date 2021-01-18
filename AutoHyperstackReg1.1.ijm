@@ -27,6 +27,7 @@
           xyCorrect=1;
           zCorrect=0;
           displayPreview=0;
+          ROIref=0;
       }
       if (xyCorrect==0 && zCorrect==0) exit;
       setBatchMode(true);
