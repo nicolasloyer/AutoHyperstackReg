@@ -22,6 +22,12 @@
           if (slices>1) displayPreview=Dialog.getCheckbox();
           else displayPreview=0;
       }
+      else if (selectionType==0)) { 
+          Dialog.create("AutoRegistration options");
+              Dialog.addCheckbox("Use only selection as reference", 1);
+          Dialog.show();
+          ROIref=Dialog.getCheckbox();
+      }
       else { 
           refChannel=1;
           xyCorrect=1;
